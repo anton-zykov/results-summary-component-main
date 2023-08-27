@@ -5,43 +5,68 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Results summary component</title>
+  <link rel="stylesheet" href="./index.css">
+  <script type="module" src="./index.js"></script>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <title>Frontend Mentor | Results summary component</title>
 </head>
 <body>
+  <div class="whiteFrame">
+    <div class="doubleFrame">
+      <div class="leftFrame">
+        <p class="yourResult">Your Result</p>
+        <div class="circle">
+          <div class="leftPercentage"></div>
+          <div class="leftMaxPercent">of 100</div>          
+        </div>
+        <p class="great">Great</p>
+        <p class="relativeScore">
+          You scored higher than 65% of the people who have taken these tests.
+        </p>
+      </div>
+      <div class="rightFrame">
+        <p>Summary</p>
+        <div class="skill reaction">
+          <img class="icon" src="./assets/images/icon-reaction.svg" alt="Reaction icon">
+          Reaction
+          <span class="percentage">
+            <span class="currentPercent" id="reaction"></span>
+            <span class="maxPercent">/ 100</span>
+          </span>
+        </div>
+        <div class="skill memory">
+          <img class="icon" src="./assets/images/icon-memory.svg" alt="Memory icon">
+          Memory
+          <span class="percentage">
+            <span class="currentPercent" id="memory"></span>
+            <span class="maxPercent">/ 100</span>
+          </span>
+        </div>
+        <div class="skill verbal">
+          <img class="icon" src="./assets/images/icon-verbal.svg" alt="Verbal icon">
+          Verbal
+          <span class="percentage">
+            <span class="currentPercent" id="verbal"></span>
+            <span class="maxPercent">/ 100</span>
+          </span>
+        </div>
+        <div class="skill visual">
+          <img class="icon" src="./assets/images/icon-visual.svg" alt="Visual icon">
+          Visual
+          <span class="percentage">
+            <span class="currentPercent" id="visual"></span>
+            <span class="maxPercent">/ 100</span>
+          </span>
+        </div>
+        <button class="continueButton">Continue</button>
+      </div>
+    </div>
+  </div>
 
-  Your Result
-  76
-  of 100
-
-  Great
-  You scored higher than 65% of the people who have taken these tests.
-  
-  Summary
-
-  Reaction
-  80 / 100
-
-  Memory
-  92 / 100
-
-  Verbal
-  61 / 100
-
-  Visual
-  72 / 100
-
-  Continue
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://github.com/anton-zykov/results-summary-component-main">Anton Zykov</a>.
   </div>
 </body>
 </html>
